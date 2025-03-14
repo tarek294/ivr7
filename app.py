@@ -10,7 +10,7 @@ adapter_settings = BotFrameworkAdapterSettings(CONFIG.APP_ID, CONFIG.APP_PASSWOR
 adapter = BotFrameworkAdapter(adapter_settings)
 
 async def messages(req):
-    print("Test")
+    print("Test1")
     body = await req.json()
     activity = Activity().deserialize(body)
     auth_header = req.headers.get("Authorization", "")
